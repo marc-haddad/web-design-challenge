@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+
+<div class="row p-3">
+    <div class="column col-6 border p-3 bg-white">
+        <h3 class="header">Summary: Latitude and the Weather</h3>
+        <br>
+        <div class="text-justify p-3">
+            <p>
+                The following project utilized the <a href="https://openweathermap.org/api" style="color:#285e8e"><u style="text-decoration-style: dashed;">OpenWeatherMap API</u></a>
+                to extract data and study the relationship between latitude and various atmospheric conditions.
+            </p>
+            <br>
+            <p>
+                The study analyzed weather data from over 500 cities from a wide range of geographic locations.
+            </p>
+            <br>
+            <p>
+                Atmospheric properties that we were particularly interestead in were
+                temperature, cloudiness, wind speed, and humidity. Our resulting dataset and plot visualizations can be found on this website.
+                
+            </p>
+        </div>
+    </div>
+    <div class="column col-1"></div>
+    <div class="column col-5 border p-3 bg-white">
+        <h5 class="header" style="text-align: center">Visualizations</h5>
+        <div class="row">
+            <div class="column">
+                    <img src="static/Fig1.png">
+                    <img src="static/Fig3.png">
+            </div>
+            <div class="column">
+                    <img src="static/Fig2.png">
+                    <img src="static/Fig4.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
