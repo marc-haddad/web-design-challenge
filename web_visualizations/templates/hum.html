@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Humidity
+{% endblock %}
+
+{% block main %}
+<div class="row p-3" >
+    <div class="col-12 col-lg-6 p-3 border bg-white" style="margin-top: 0; margin-bottom: auto;">
+        <h3 class="header">Humidity vs. Latitude</h3>
+        <br>
+        <img class="center" src="static/Fig2.png">
+    </div>
+
+    <div class="col-12 col-xl-3 col-lg-12 col-sm-12 col-md-12 p-3 border bg-dark text-white" style="margin-top: 7%; margin-bottom: auto; margin-right: 4%;">
+        <h4 class="header text-white">Observations</h4>
+        <br>
+        <p class="justify-left text-white">
+            At first glance, it does not appear that a strong correlation between humidity and latitude exists. However, if you look closely you can see a not insignificant concentration and low variability of humidity around the equator.
+        </p>
+        <p class="justify-left text-white">
+            The relationship is certainly not as robust as the one between max temperature and latitude, but it exists nonetheless.
+        </p>
+    </div>
+</div>
+<br>
+<h4 class="header">Other Plots</h4>
+<div class="row p-3">
+    <div class="col-6 col-lg-4 p-3 border bg-white">
+        <h6 class="header">Max Temp</h6>  
+        <a href="/temp"><img class="center" src="static/Fig1.png"></a>
+    </div>
+    <div class="col-6 col-lg-4 p-3 border bg-white">
+        <h6 class="header">Cloudiness</h6> 
+        <a href="/cloud"><img class="center" src="static/Fig3.png"></a>
+    </div>
+    <div class="col-6 col-lg-4 p-3 border bg-white">
+        <h6 class="header">Wind Speed</h6> 
+        <a href="/wind"><img class="center" src="static/Fig4.png"></a>
+    </div>
+</div>
+{% endblock %}

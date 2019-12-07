@@ -7,7 +7,7 @@
 {% block main %}
 
 <div class="row p-3">
-    <div class="column col-6 border p-3 bg-white">
+    <div class="column col-6 border p-3 bg-white" style="margin-bottom: auto">
         <h3 class="header">Summary: Latitude and the Weather</h3>
         <br>
         <div class="text-justify p-3">
@@ -31,13 +31,17 @@
     <div class="column col-5 border p-3 bg-white">
         <h5 class="header" style="text-align: center">Visualizations</h5>
         <div class="row">
-            <div class="column">
-                    <img src="static/Fig1.png">
-                    <img src="static/Fig3.png">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                    <h6 class="header">Max Temp</h6>
+                    <a href="/temp"><img src="static/Fig1.png"></a>
+                    <h6 class="header">Cloudiness</h6>
+                    <a href="/cloud"><img src="static/Fig3.png"></a>
             </div>
-            <div class="column">
-                    <img src="static/Fig2.png">
-                    <img src="static/Fig4.png">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                    <h6 class="header">Humidity</h6>
+                    <a href="/hum"><img src="static/Fig2.png"></a>
+                    <h6 class="header">Wind Speed</h6>
+                    <a href="/wind"><img src="static/Fig4.png"></a>
             </div>
         </div>
     </div>
