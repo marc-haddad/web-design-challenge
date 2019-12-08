@@ -29,6 +29,11 @@ nav .subcats
 
 }
 
+.hoverable
+{
+    color: #285e8e;
+}
+
 main .form-control
 {
     /* center form controls */
@@ -58,6 +63,7 @@ main .header
     color: #285e8e;
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 p
@@ -66,8 +72,34 @@ p
     color: #343a40;
 }
 
-a .href
+th
 {
+    text-align: center;
+}
+
+.table 
+{
+    margin: auto; 
+}
+
+
+table#table1 
+{
+    width:100%; 
+    margin-left:0%; 
+    margin-right:0%;
+}
+
+u
+{
+    text-decoration-style: dashed;
+    color: #285e8e;
+}
+
+a
+{
+    text-decoration-line: underline;   
+    text-decoration-style: dashed;
     color: #285e8e;
 }
 
